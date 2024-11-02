@@ -1,6 +1,7 @@
 # How to Contribute
 
 # Issues
+## Bitte eine E-Mail an lieblingskollege@firma.com senden
 
 * Please tag your issue with `bug`, `feature request`, or `question` to help us
   effectively respond.
