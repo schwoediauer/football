@@ -1,5 +1,8 @@
 # Google Research Football
 
+
+##edited by (c) Juergen Schwoediauer
+
 This repository contains an RL environment based on open-source game Gameplay
 Football. <br> It was created by the Google Brain team for research purposes.
 
@@ -65,8 +68,8 @@ python -m pip install --upgrade pip setuptools psutil wheel
 python3 -m pip install gfootball
 ```
 
-#### Option b. Installing from sources using GitHub repository 
-(On Windows you have to install additional tools and set an environment variable, see 
+#### Option b. Installing from sources using GitHub repository
+(On Windows you have to install additional tools and set an environment variable, see
 [Compiling Engine](gfootball/doc/compile_engine.md#windows) for detailed instructions.)
 
 ```shell
@@ -183,7 +186,7 @@ We provide trained PPO checkpoints for the following scenarios:
 
 In order to see the checkpoints playing, run
 `python3 -m gfootball.play_game --players "ppo2_cnn:left_players=1,policy=gfootball_impala_cnn,checkpoint=$CHECKPOINT" --level=$LEVEL`,
-where `$CHECKPOINT` is the path to downloaded checkpoint. Please note that the checkpoints were trained with Tensorflow 1.15 version. Using 
+where `$CHECKPOINT` is the path to downloaded checkpoint. Please note that the checkpoints were trained with Tensorflow 1.15 version. Using
 different Tensorflow version may result in errors. The easiest way to run these checkpoints is through provided `Dockerfile_examples` image.
 See [running in docker](gfootball/doc/docker.md) for details (just override the default Docker definition with `-f Dockerfile_examples` parameter).
 
